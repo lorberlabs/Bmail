@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %} | Welcome to Bmail </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1 >Bmail</h1>
+      <a href="/">First page</a> | <a href="/inbox">Inbox</a> | {% if is_logged %}
+    <a href="{{logout_url}}">Logout ({{email}})</a>
+    
+    {% else %}
+    <a href="{{login_url}}">Login</a>
+    {%endif%}
+
+    {% block page_content %}
+    {% endblock page_content %}
+    
+    <div class="container">
+        <div class="card card-container">
+            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+        </div>
+    </div>
+
+  
+</body>
+</html>

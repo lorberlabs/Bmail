@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %} | Welcome to Bmail </title>
+
+    <link rel="stylesheet" href="/assets/css/inbox.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+<body>
+  <h1>BMail</h1>
+   
+   <div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Mail <span class="caret"></span>
+                </button>
+                
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-10">
+           
+             
+
+                
+               
+            </div>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Refresh">
+                   <span class="glyphicon glyphicon-refresh"></span>   </button>
+            <!-- Single button -->
+            
+            
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <a href="/writemessage.html" class="btn btn-danger btn-sm btn-block" role="button">COMPOSE</a>
+            <hr />
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"> Inbox </a>
+                </li>
+                
+                <li><a href="#">Sent Mail</a></li>
+               
+            </ul>
+        </div>
+        <div class="col-sm-9 col-md-10">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab"><span class="glyphicon glyphicon-inbox">
+                </span>Primary</a></li>
+             
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    </body>
+</html>

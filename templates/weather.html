@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Weather </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+   <form method="get">
+      Kraj: <input type="text" name="location"/>
+      <button type="submit">Pridobi</button>
+       
+   </form>
+   {% if weather.cod == 200 %}
+    <h3>Vreme v {{weather.name}}</h3>
+    <p>Temp: {{weather.main.temp -273}} stopinj celzija</p>
+    {% endif %}
+    
+</body>
+</html>
